@@ -1,0 +1,117 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column .img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .cardWrapper {
+    position: relative;
+    overflow: hidden; 
+    border-radius: 0.25rem; 
+    max-width: 24rem; 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+    margin-bottom: 1.5rem;
+  }
+
+  .cardImg {
+    width: 100%; 
+  }
+
+  .upperDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .profileWrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profilePicture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .profileName {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .cardBody {
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; 
+  }
+
+  .cardBodyTitle {
+    margin-bottom: 0.5rem; 
+    font-size: 1.25rem;
+    line-height: 1.75rem; 
+    font-weight: 700; 
+  }
+
+  .cardBodyDesc {
+    font-size: 1rem;
+    line-height: 1.5rem; 
+    color: #374151; 
+  }
+
+  .cardTagWrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; 
+    padding-bottom: 0.5rem; 
+    padding-top: 1rem; 
+  }
+
+  .cardTag {
+    display: inline-block; 
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem; 
+    padding-left: 0.75rem;
+    padding-right: 0.75rem; 
+    margin-right: 0.5rem; 
+    margin-bottom: 0.5rem; 
+    border-radius: 9999px; 
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+    font-weight: 600; 
+    color: #232324; 
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

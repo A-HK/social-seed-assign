@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import InfiniteList from './AppFeed'; // Assuming you have already created this component
+import InfiniteList from './InfiniteList'; // Assuming you have already created this component
 import styles from '../styles/UserProfile.module.css'; // Assuming you have CSS module for styling
 
 const UserProfile = () => {
@@ -47,7 +47,7 @@ const UserProfile = () => {
       {/* List View */}
       <div>
         <h2>List View</h2>
-        <InfiniteList photos={userPhotos} />
+        <InfiniteList visiblePhotos={userPhotos} />
       </div>
     </div>
   );
