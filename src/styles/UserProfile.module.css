@@ -1,8 +1,24 @@
-/* UserProfile.module.css */
-.grid {
+  .profileWrapper {
+    display: grid;
+    grid-template-columns: 30% 70%; /* Left occupies 30%, viewWrapper occupies 70% */
+    gap: 20px; /* Optional gap between the two columns */
+  }
+
+  .viewWrapper {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .left {
+    background-color: #00d09c;
+    color: #fff;
+  }
+
+  .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 16px;
+    grid-gap: 8px;
+    align-content: stretch;
   }
   
   .gridItem {
@@ -11,10 +27,26 @@
     align-items: center;
     justify-content: center;
     padding: 8px;
-    border: 1px solid #ccc;
+  }
+
+  .toggleButton {
+    display: flex; 
+    align-items: center; 
+    background-color: #0d0d0d;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+  }
+
+  .toggleText {
+    margin-right: 10px;
+  }
+  .toggleIcon {
+    margin-left: auto;
+    width: 20px;
+    height: 20px;
   }
   
-  .gridItem p {
-    margin-top: 8px;
-  }
+
   

@@ -14,7 +14,7 @@ const CardFooter = ({photo}) => {
         : <div>
             <CardTag topic="life" color="black" />
             <CardTag topic="inspiration" color="black" />
-            <CardTag topic="growth" color="black" />
+            <CardTag topic="growwth" color="black" />
           </div>
       }       
     </div>

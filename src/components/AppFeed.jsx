@@ -42,9 +42,9 @@ const FetchPhotos = () => {
 
   return (
     <>
-    <InfiniteList visiblePhotos={visiblePhotos} />
-    <div ref={listRef}></div>
-  </>
+      <InfiniteList visiblePhotos={visiblePhotos} />
+      <div ref={listRef}></div>
+    </>
   )
 
 }

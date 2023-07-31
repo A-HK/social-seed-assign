@@ -9,7 +9,7 @@ import styles from '@/styles/CardStyles.module.css'
 const InfiniteList = ({visiblePhotos}) => {
 
   return (
-    <div>
+    <div className={styles.listWrapper}>
       <div>
         {visiblePhotos.map((photo, index) => (
           <Card photo={photo} key={`${photo.id}-${index}`} />

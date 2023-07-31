@@ -7,15 +7,9 @@ import UserProfile from '@/components/UserProfile';
 const UserProfilePage = () => {
   const router = useRouter();
   const { username } = router.query;
-  const [isGridView, setIsGridView] = useState(true);
-
-
-  const toggleView = () => {
-    setIsGridView((prev) => !prev);
-  };
 
   return (
-  <UserProfile />
+    <UserProfile />
   );
 };
 

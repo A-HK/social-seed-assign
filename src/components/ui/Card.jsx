@@ -16,7 +16,7 @@ const Card = ({ photo, index }) => {
         <Image 
             className={styles.cardImg} 
             src={`https://source.unsplash.com/${photo.id}`} 
-            alt={photo.alt_description} 
+            alt={photo.alt_description || `unsplash photo`} 
             width={300} 
             height={300}
             blurDataURL={photo.blur_hash}
