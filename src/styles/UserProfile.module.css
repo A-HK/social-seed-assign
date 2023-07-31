@@ -1,0 +1,20 @@
+/* UserProfile.module.css */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 16px;
+  }
+  
+  .gridItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .gridItem p {
+    margin-top: 8px;
+  }
+  
